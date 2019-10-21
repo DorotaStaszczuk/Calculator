@@ -6,7 +6,9 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-
+  font-family: 'Dosis', sans-serif;
+  font-size: 56px;
+  color: rgb(80, 92, 150);
 }
 
 .container {
@@ -94,6 +96,8 @@ body {
   background-color: gray;
   margin: 5px;
   padding: 10px;
+  font-family: 'Press Start 2P', cursive;
+  color: black;
 }
 
 .button-r {
