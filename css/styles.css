@@ -93,11 +93,13 @@ body {
 .display {
   grid-column: 2/-1;
   grid-row: 1/2;
+  justify-content: flex-end;
   background-color: gray;
   margin: 5px;
   padding: 10px;
   font-family: 'Press Start 2P', cursive;
   color: black;
+  font-size: 36px;
 }
 
 .button-r {
