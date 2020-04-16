@@ -28,7 +28,7 @@ body {
   border-radius: 10px;
 }
 
-.container div {
+.container .button {
   -webkit-box-shadow: 5px 5px 6px 5px rgba(0, 0, 0, 0.21);
   box-shadow: 5px 5px 6px 5px rgba(0, 0, 0, 0.21);
   border-radius: 10px;
@@ -94,13 +94,17 @@ body {
 .display {
   grid-column: 2/-1;
   grid-row: 1/2;
+  display: flex;
   justify-content: flex-end;
+  align-items: center;
   background-color: gray;
   margin: 5px;
-  padding: 10px;
+  padding: 15px;
   font-family: 'Press Start 2P', cursive;
   color: black;
   font-size: 36px;
+  box-shadow: inset 8px 8px 8px rgba(0, 0, 0, 0.21);
+  border-radius: 10px;
 }
 
 .result {
