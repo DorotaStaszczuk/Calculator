@@ -1,7 +1,8 @@
-// starting point
-let result = 0;
+document.addEventListener('DOMContentLoaded', function () {
+    const clear = document.querySelector('.clear');
+    const display = document.querySelector('.display');
 
-function clearDisplay() {
-    result = 0;
-    return result;
-}
+    clear.addEventListener('click', function () {
+        display.innerText = 0;
+    });
+});
