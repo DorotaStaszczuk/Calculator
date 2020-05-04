@@ -25,4 +25,48 @@ document.addEventListener('DOMContentLoaded', function () {
         display.innerText = 0;
         console.log('clearing the display');
     });
+
+    const container = document.querySelector('.container');
+    container.addEventListener('click', function (e) {
+        // building and displaying firstOperand
+        if (!firstOperandExists && e.target.matches('.digit') && !operatorExists) {
+            console.log(e.target.innerText);
+            firstOperand = e.target.innerText;
+            display.innerText = firstOperand;
+            firstOperandExists = true;
+        } else if (firstOperandExists && e.target.matches('.digit') && !operatorExists) {
+            console.log(e.target.innerText);
+            firstOperand = firstOperand + e.target.innerText;
+            display.innerText = firstOperand;
+        } else if (firstOperandExists && e.target.matches('.dot') && !operatorExists && !firstOperandDotExists) {
+            console.log(e.target.innerText);
+            firstOperand = firstOperand + e.target.innerText;
+            firstOperandDotExists = true;
+            display.innerText = firstOperand;
+        }
+
+        // operator
+        if (firstOperandExists && !operatorExists && e.target.matches('.operator')) {
+            console.log(e.target.innerText);
+            display.innerText = e.target.innerText;
+            operator = e.target.innerText;
+            operatorExists = true;
+        }
+        // secondOperand
+        if (operatorExists && !secondOperandExists && e.target.matches('.digit')) {
+            console.log(e.target.innerText);
+            secondOperand = e.target.innerText;
+            display.innerText = secondOperand;
+            secondOperandExists = true;
+        } else if (secondOperandExists && e.target.matches('.digit') && !resultExists) {
+            console.log(e.target.innerText);
+            secondOperand = secondOperand + e.target.innerText;
+            display.innerText = secondOperand;
+        } else if (secondOperandExists && e.target.matches('.dot') && !secondOperandDotExists && !resultExists) {
+            console.log(e.target.innerText);
+            secondOperand = secondOperand + e.target.innerText;
+            secondOperandDotExists = true;
+            display.innerText = secondOperand;
+        }
+    });
 });
