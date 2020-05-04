@@ -69,4 +69,34 @@ document.addEventListener('DOMContentLoaded', function () {
             display.innerText = secondOperand;
         }
     });
+
+    // calculating result
+    const equals = document.querySelector('.equals');
+    equals.addEventListener('click', function () {
+        if (firstOperandExists && secondOperandExists && operatorExists && !resultExists) {
+            if (operator === '+') {
+                result = Number(firstOperand) + Number(secondOperand);
+                console.log(result);
+                resultExists = true;
+            } else if (operator === '-') {
+                result = Number(firstOperand) - Number(secondOperand);
+                console.log(result);
+                resultExists = true;
+            } else if (operator === 'x') {
+                result = Number(firstOperand) * Number(secondOperand);
+                console.log(result);
+                resultExists = true;
+            } else if (operator === '/') {
+                result = Number(firstOperand) / Number(secondOperand);
+                console.log(result);
+                resultExists = true;
+            } else {
+                console.log('not working');
+            }
+            // displaying result
+            if (resultExists) {
+                display.innerText = result;
+            }
+        }
+    });
 });
