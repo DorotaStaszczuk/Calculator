@@ -1,25 +1,28 @@
 document.addEventListener('DOMContentLoaded', function () {
-    let result = 0;
+    let result;
     let operator;
     let firstOperand;
     let secondOperand;
 
-    const clear = document.querySelector('.clear');
+    let resultExists = false;
+    let operatorExists = false;
+    let firstOperandExists = false;
+    let secondOperandExists = false;
+    let firstOperandDotExists = false;
+    let secondOperandDotExists = false;
+
     const display = document.querySelector('.display');
 
+    // clearing the display
+    const clear = document.querySelector('.clear');
     clear.addEventListener('click', function () {
+        firstOperandExists = false;
+        operatorExists = false;
+        secondOperandExists = false;
+        firstOperandDotExists = false;
+        secondOperandDotExists = false;
+        resultExists = false;
         display.innerText = 0;
         console.log('clearing the display');
-    });
-
-    const container = document.querySelector('.container');
-    container.addEventListener('click', function (e) {
-        if (e.target.matches('.digit')) {
-            console.log(e.target.innerText);
-            display.innerText = e.target.innerText;
-        } else if (e.target.matches('.operator')) {
-            console.log(e.target.innerText);
-            display.innerText = e.target.innerText;
-        }
     });
 });
