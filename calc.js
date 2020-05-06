@@ -99,4 +99,12 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         }
     });
+
+    // adding sound effects to buttons
+    const clickSound = document.getElementById('click-sound');
+    document.querySelectorAll('.button').forEach((btn) => {
+        btn.addEventListener('click', function () {
+            clickSound.play();
+        });
+    });
 });
