@@ -7,21 +7,19 @@ body {
   align-items: center;
   justify-content: center;
   font-family: 'Dosis', sans-serif;
-  font-size: 56px;
   color: rgb(80, 92, 150);
 }
 
 .container {
-  width: 700px;
-  height: 700px;
+  width: 300px;
+  height: 300px;
   margin: 35px;
+  font-size: 26px;
   display: grid;
   grid-template-rows: repeat(5, 1fr);
   grid-template-columns: repeat(4, 1fr);
   background-color: lightblue;
-  grid-column-gap: 10px;
-  grid-row-gap: 15px;
-  padding: 20px;
+  padding: 10px;
   box-shadow: 0px 3px 29px -6px rgba(0, 0, 0, 0.81);
   -webkit-box-shadow: 0px 3px 29px -6px rgba(0, 0, 0, 0.81);
   -moz-box-shadow: 0px 3px 29px -6px rgba(0, 0, 0, 0.81);
@@ -38,7 +36,7 @@ body {
 }
 
 .button {
-  padding: 10px;
+  padding: 5px;
   background-color: whitesmoke;
   margin: 5px;
   cursor: pointer;
@@ -102,7 +100,7 @@ body {
   padding: 15px;
   font-family: 'Press Start 2P', cursive;
   color: black;
-  font-size: 36px;
+  font-size: 20px;
   box-shadow: inset 8px 8px 8px rgba(0, 0, 0, 0.21);
   border-radius: 10px;
   overflow: hidden;
@@ -119,4 +117,33 @@ body {
   transform: translateY(2px);
   -webkit-box-shadow: 3px 3px 4px 3px rgba(0, 0, 0, 0.31);
   box-shadow: 3px 3px 4px 3px rgba(0, 0, 0, 0.31);
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 500px;
+    height: 500px;
+    grid-column-gap: 8px;
+    grid-row-gap: 12px;
+    font-size: 36px;
+    padding: 20px;
+  }
+
+  .button {
+    padding: 10px;
+  }
+
+  .display {
+    font-size: 36px;
+  }
+}
+
+@media (min-width: 1352px) {
+  .container {
+    width: 700px;
+    height: 700px;
+    grid-column-gap: 10px;
+    grid-row-gap: 15px;
+    font-size: 56px;
+  }
 }
