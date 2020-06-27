@@ -26,7 +26,11 @@ body {
   border-radius: 10px;
 }
 
-.container .button {
+.button {
+  padding: 5px;
+  background-color: whitesmoke;
+  margin: 5px;
+  cursor: pointer;
   -webkit-box-shadow: 5px 1px 6px 1px rgba(0, 0, 0, 0.21);
   box-shadow: 5px 5px 6px 1px rgba(0, 0, 0, 0.21);
   border-radius: 10px;
@@ -35,58 +39,35 @@ body {
   align-items: center;
 }
 
-.button {
-  padding: 5px;
-  background-color: whitesmoke;
-  margin: 5px;
-  cursor: pointer;
-}
-
 .plus {
   grid-column: 4/5;
   grid-row: 2/3;
-  padding: 10px;
-  background-color: whitesmoke;
-  margin: 5px;
 }
 
 .minus {
   grid-column: 4/5;
   grid-row: 3/4;
-  padding: 10px;
-  background-color: whitesmoke;
-  margin: 5px;
 }
 
 .divide {
   grid-column: 4/5;
   grid-row: 4/5;
-  padding: 10px;
-  background-color: whitesmoke;
-  margin: 5px;
 }
 
 .multiply {
   grid-column: 4/5;
   grid-row: 5/6;
-  padding: 10px;
-  background-color: whitesmoke;
-  margin: 5px;
 }
 
 .dot {
   grid-column: 2/3;
   grid-row: 5/6;
-  padding: 10px;
-  background-color: whitesmoke;
-  margin: 5px;
 }
 
 .clear {
   grid-column: 1/2;
   grid-row: 1/2;
   background-color: pink;
-  margin: 5px;
 }
 
 .display {
@@ -110,7 +91,6 @@ body {
   grid-column: 3/4;
   grid-row: 5/6;
   background-color: yellow;
-  margin: 5px;
 }
 
 .button:active {
@@ -134,16 +114,14 @@ body {
 
   .button {
     padding: 10px;
+    -webkit-box-shadow: 5px 5px 6px 5px rgba(0, 0, 0, 0.21);
+    box-shadow: 5px 5px 6px 5px rgba(0, 0, 0, 0.21);
   }
 
   .display {
     font-size: 30px;
   }
 
-  .container .button {
-    -webkit-box-shadow: 5px 5px 6px 5px rgba(0, 0, 0, 0.21);
-    box-shadow: 5px 5px 6px 5px rgba(0, 0, 0, 0.21);
-  }
 }
 
 @media (min-width: 1352px) {
