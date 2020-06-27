@@ -95,8 +95,8 @@ body {
 
 .button:active {
   transform: translateY(2px);
-  -webkit-box-shadow: 3px 3px 4px 3px rgba(0, 0, 0, 0.31);
-  box-shadow: 3px 3px 4px 3px rgba(0, 0, 0, 0.31);
+  -webkit-box-shadow: 3px 3px 4px 1px rgba(0, 0, 0, 0.31);
+  box-shadow: 3px 3px 4px 1px rgba(0, 0, 0, 0.31);
 }
 
 @media (min-width: 768px) {
@@ -116,6 +116,12 @@ body {
     padding: 10px;
     -webkit-box-shadow: 5px 5px 6px 5px rgba(0, 0, 0, 0.21);
     box-shadow: 5px 5px 6px 5px rgba(0, 0, 0, 0.21);
+  }
+
+  .button:active {
+    transform: translateY(2px);
+    -webkit-box-shadow: 3px 3px 4px 3px rgba(0, 0, 0, 0.31);
+    box-shadow: 3px 3px 4px 3px rgba(0, 0, 0, 0.31);
   }
 
   .display {
