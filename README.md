@@ -1,6 +1,6 @@
 # Calculator
 
-https://codepen.io/Dorota_S/pen/LYpdVPo
+https://dorotastaszczuk.github.io/Calculator/
 
 ## General info
 
